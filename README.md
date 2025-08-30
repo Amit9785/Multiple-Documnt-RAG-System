@@ -2,7 +2,7 @@
 
 A powerful Retrieval-Augmented Generation (RAG) chatbot that allows you to upload and query multiple documents (PDF, DOCX, PowerPoint, TXT) using natural language. Built with modern AI technologies including LangChain, FAISS vector search, and Streamlit for an intuitive web interface.
 
-![Architecture Diagram](Architectural%20Diagram.png)
+(![SYSTEM ARCHITECT OF DOCUCHAT AI](https://github.com/user-attachments/assets/9942ef46-e5b3-4157-8e64-1e10511a12ab))
 
 ## 🚀 Features
 

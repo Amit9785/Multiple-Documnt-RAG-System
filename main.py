@@ -94,8 +94,8 @@ def _get_file_path(file_upload):
 
 # Main Streamlit app function
 def main():
-    st.title("Chat with Multiple Documents(pdf, docx, ppt, txt)")
-    logging.info("App started")
+    st.title("Chat with Multiple Documents ")
+    logging.info("App going ready...")
 
     if 'messages' not in st.session_state:
         st.session_state.messages = [
@@ -115,7 +115,7 @@ def main():
     )
 
     if file_upload:     
-        st.success("File uploaded successfully! You can now ask your question.")
+        st.success("File uploaded successfully! Now you ask Question.")
 
 
 

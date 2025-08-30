@@ -1,0 +1,13 @@
+unstructured[all-docs]
+langchain_community
+langchain-groq
+langchain-text-splitters 
+tiktoken
+streamlit 
+faiss-cpu 
+langchainhub
+requests
+sentence-transformers
+python-dotenv
+
+

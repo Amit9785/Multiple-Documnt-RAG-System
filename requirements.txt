@@ -1,4 +1,4 @@
-unstructured[all-docs]
+unstructured
 langchain_community
 langchain-groq
 langchain-text-splitters 

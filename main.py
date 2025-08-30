@@ -51,7 +51,7 @@ def split_text(text: str):
 def get_vectorstore(chunks):
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
-        model_kwargs={'device': 'cpu'}
+        model_kwargs={'device': 'cpu'},
         api_key=st.secrets.get("HUGGINGFACEHUB_API_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN")  # Ensure your API key is set in environment variables
     )
     vectorstore = FAISS.from_texts(texts=chunks, embedding=embeddings)

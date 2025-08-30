@@ -69,9 +69,7 @@ def rag_chain(vectorstore, question):
             "context": vectorstore.as_retriever() | format_docs,
             "question": RunnablePassthrough(),
         }
-        | prompt
-        | llm
-        | StrOutputParser()
+        | prompt | llm | StrOutputParser()
     )
 
     return qa_chain.invoke(question)
@@ -94,7 +92,7 @@ def _get_file_path(file_upload):
 
 # Main Streamlit app function
 def main():
-    st.title("Chat with Multiple Documents ")
+    st.title("Chat with DocuChat AI ")
     logging.info("App going ready...")
 
     if 'messages' not in st.session_state:

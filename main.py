@@ -21,7 +21,7 @@ prompt = hub.pull("rlm/rag-prompt")
 llm = ChatGroq(
     model="openai/gpt-oss-20b",  # Example model
     temperature=0.0,
-    api_key=st.secrets.get("GROQ_API_KEY") or os.getenv("GROQ_API_KEY")  # Ensure your API key is set in environment variables
+    api_key=st.secrets["GROQ_API_KEY"]  # Ensure your API key is set in environment variables
 )
 
 
@@ -51,8 +51,7 @@ def split_text(text: str):
 def get_vectorstore(chunks):
     embeddings = HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
-        model_kwargs={'device': 'cpu'},
-        api_key=st.secrets.get("HUGGINGFACEHUB_API_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN")  # Ensure your API key is set in environment variables
+        model_kwargs={'device': 'cpu'},  # Ensure your API key is set in environment variables
     )
     vectorstore = FAISS.from_texts(texts=chunks, embedding=embeddings)
     return vectorstore

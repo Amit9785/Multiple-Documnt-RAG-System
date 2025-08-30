@@ -91,7 +91,7 @@ The application uses the following models by default:
 
 ### Customization
 
-You can modify these settings in `rag.py`:
+You can modify these settings in `main.py`:
 
 ```python
 # Change LLM model
@@ -114,13 +114,6 @@ text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
 )
 ```
 
-## 📊 Sample Documents
-
-The project includes sample historical Indian documents for testing:
-
-- **Constitutional Assembly Debates** (PDF)
-- **Indian Independence Bill** (TXT)
-- **CAD Documents** (PDF)
 
 These documents provide rich content for testing the RAG capabilities.
 
@@ -169,46 +162,7 @@ def rag_chain(vectorstore, question):
     )
 ```
 
-## 🛡️ Security & Privacy
 
-- **Local Processing**: Text embeddings are generated locally
-- **Temporary Files**: Uploaded files are stored temporarily and can be cleaned up
-- **API Security**: Groq API key should be kept secure in environment variables
-- **No Data Persistence**: Chat history is session-based only
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Groq API Error**
-   - Ensure your API key is correctly set in `.env`
-   - Check your Groq account balance
-   - Verify internet connectivity
-
-2. **Model Download Issues**
-   - First run may take time to download embedding models
-   - Ensure stable internet connection
-   - Check available disk space
-
-3. **Memory Issues**
-   - Large documents may require more RAM
-   - Consider reducing chunk size for very large files
-   - Close other applications to free memory
-
-4. **File Upload Errors**
-   - Ensure file formats are supported (PDF, DOCX, PPTX, TXT)
-   - Check file size limits
-   - Verify file integrity
-
-### Performance Tips
-
-- Use smaller chunk sizes for faster processing
-- Limit the number of simultaneous document uploads
-- Consider using GPU for embedding generation (if available)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Development Setup
 
@@ -222,7 +176,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **LangChain**: For the RAG framework
 - **Groq**: For fast and cost-effective LLM access
@@ -230,26 +184,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Streamlit**: For the web interface
 - **FAISS**: For vector similarity search
 
-## 📞 Support
+## Support
 
 If you encounter any issues or have questions:
 
 1. Check the troubleshooting section above
 2. Review the code comments for implementation details
 3. Open an issue on GitHub
-4. Contact the development team
-
-## 🔮 Future Enhancements
-
-- [ ] Document preprocessing and cleaning
-- [ ] Support for more file formats
-- [ ] Conversation export functionality
-- [ ] Advanced search filters
-- [ ] User authentication
-- [ ] Document versioning
-- [ ] API endpoints for integration
-- [ ] Mobile-responsive design
-
----
 
 **Made with ❤️ using modern AI technologies**

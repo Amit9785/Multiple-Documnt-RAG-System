@@ -9,5 +9,8 @@ langchainhub
 requests
 sentence-transformers
 python-dotenv
-
-
+opencv-python-headless
+torch
+torchvision
+pytesseract
+layoutparser

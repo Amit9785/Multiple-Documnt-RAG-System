@@ -1,4 +1,5 @@
-# DocuChat AI - Multi-Document RAG Chatbot
+# DocuChat AI - Multi-Document RAG Chatbot (https://amit9785-multiple-documnt-rag-system-main-zn3jjy.streamlit.app/)
+
 
 A powerful Retrieval-Augmented Generation (RAG) chatbot that allows you to upload and query multiple documents (PDF, DOCX, PowerPoint, TXT) using natural language. Built with modern AI technologies including LangChain, FAISS vector search, and Streamlit for an intuitive web interface.
 
@@ -61,7 +62,7 @@ The system follows a modern RAG architecture:
 
 1. **Start the application**
    ```bash
-   streamlit run rag.py
+   streamlit run main.py
    ```
 
 2. **Access the web interface**
@@ -77,21 +78,6 @@ The system follows a modern RAG architecture:
    - Type your questions in the chat input
    - The AI will search through your documents and provide relevant answers
    - Conversation history is maintained throughout the session
-
-## 📁 Project Structure
-
-```
-RAG-MultiDoc-Chatbot/
-├── rag.py                 # Main application file
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-├── .env                  # Environment variables (create this)
-├── Knowledge/            # Sample documents
-│   ├── *.pdf            # PDF documents
-│   └── *.txt            # Text documents
-├── temp/                 # Temporary file storage
-└── Architectural Diagram.png
-```
 
 ## 🔧 Configuration
 

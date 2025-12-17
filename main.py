@@ -8,7 +8,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_community.vectorstores import FAISS 
 # from langchain_openai.chat_models import ChatOpenAI
 from unstructured.partition.auto import partition
-from langchainhub import hub
+from langchain import hub
 from dotenv import load_dotenv
 import streamlit as st
 import logging

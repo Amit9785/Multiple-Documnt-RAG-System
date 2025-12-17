@@ -14,4 +14,4 @@ torch
 torchvision
 pytesseract
 layoutparser
-langchainhub
+langchain
